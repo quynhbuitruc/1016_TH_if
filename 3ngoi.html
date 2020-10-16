@@ -35,6 +35,13 @@
             let Sum = X + Y
             console.log(Sum)
             document.getElementById("Display").innerText = "Tổng 2 số là :" + " " + Sum
+            if (Sum == 4) {
+                document.getElementById("Show").innerText = "Giá trị của tổng 2 số bằng 4!"
+            } else if (Sum > 4) {
+                document.getElementById("Show").innerText = "Giá trị của tổng 2 số lớn hơn 4!"
+            } else {
+                document.getElementById("Show").innerText = "Giá trị của tổng 2 số nhỏ hơn 4!"
+            }
         }
     </script>
 </body>
