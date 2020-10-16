@@ -7,8 +7,19 @@
 </head>
 <body>
     <script>
-        let value = prompt('Nhập tên ID','')
-        
+        let user = prompt('Username','')
+        if (user == 'Admin') {
+            let Pass = prompt('Password:','')
+            if (Pass == 'Themaster') {
+                alert('Welcome, Master!')
+            } else {
+                alert('Wrong Password')
+            }
+        } else if (user == null) {
+            alert('Canceled')
+        } else {
+            alert("I don't know you!")
+        }
     </script>
 </body>
 </html>
