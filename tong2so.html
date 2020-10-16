@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tổng 2 số</title>
+    <style>
+        div {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <p> TÍNH TỔNG 2 SỐ VÀ SO SÁNH</p>
+    <div>
+        Nhập số thứ 1:
+        <input id="so1" type="number" value="">
+    </div>
+    <div>
+        Nhập số thứ 2
+        <input id="so2" type="number" value="">
+    </div>
+    <button onclick="Sum()" id="Sum">Sum</button>
+    <p id="Display"></p>
+    <p id="Show"></p>
+
+    <script>
+        function Sum() {
+            let X = Number(document.getElementById("so1").value)
+            console.log(X)
+            let Y = Number(document.getElementById("so2").value)
+            console.log(Y)
+            let Sum = X + Y
+            console.log(Sum)
+            document.getElementById("Display").innerText = "Tổng 2 số là :" + " " + Sum
+            if (Sum == 4) {
+                document.getElementById("Show").innerText = "Giá trị của tổng 2 số bằng 4!"
+            } else if (Sum > 4) {
+                document.getElementById("Show").innerText = "Giá trị của tổng 2 số lớn hơn 4!"
+            } else {
+                document.getElementById("Show").innerText = "Giá trị của tổng 2 số nhỏ hơn 4!"
+            }
+        }
+    </script>
+</body>
+
+</html>
